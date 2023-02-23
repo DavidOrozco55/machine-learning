@@ -5,7 +5,6 @@ import math
 import pandas as pd
 import tkinter as tk
 from tkinter import ttk
-import tkinter as tk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 
