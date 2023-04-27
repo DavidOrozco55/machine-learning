@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas y botón</title>
+	<style>
+		canvas {
+			border: 1px solid #000;
+			display: block;
+			margin: 0 auto;
+		}
+		#limpiar, #predecir {
+			display: block;
+			margin: 10px auto;
+			padding: 10px;
+			background-color: #1e90ff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#resultado-secuencial {
+			display: block;
+			margin: 10px auto;
+			padding: 10px;
+			border: 2px solid #1e90ff;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+
+    #resultado-convulcional {
+      display: block;
+			margin: 10px auto;
+			padding: 10px;
+			border: 2px solid #2f9003;
+			border-radius: 5px;
+			font-weight: bold;
+    }
+	</style>
+</head>
+<body>
+	<canvas id="mi-canvas" width="280" height="280"></canvas>
+  <canvas id="smallcanvas" width="28" height="28" style="display: none"></canvas>
+
+	<button id="limpiar" onclick="clean()">Limpiar</button>
+	<button id="predecir" onclick="predictBoth()">Predecir</button>
+	<div id="resultado-secuencial">Resultado Secuencial</div>
+	<div id="resultado-convulcional">Convulcional</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <script src="fabric.min.js"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
